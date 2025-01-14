@@ -4,5 +4,14 @@ version = "0.1.0"
 edition = "2021"
 readme = "README.md"
 repository = "https://github.com/danjones1618/cirro"
+description = "Unify development dashboards into a single TUI"
 
 [dependencies]
+clap = { version = "4.5.23", features = ["derive", "unicode"] }
+etcetera = "0.8.0"
+keyring = {version = "3.6.1", features = ["apple-native", "windows-native", "linux-native-sync-persistent"]}
+rpassword = "7.3.1"
+serde = "1.0.217"
+thiserror = "2.0.9"
+toml = "0.8.19"
+url = { version = "2", features = ["serde"] }
